@@ -10,8 +10,8 @@ import { ShipmentStatus } from './shipment-status.enum';
 export class ShipmentsService {
   constructor(
     @InjectRepository(ShipmentEntity)
-    private readonly shipmentsRepository: Repository<ShipmentEntity>,
-    private readonly shipmentRulesService: ShipmentRulesService,
+    private readonly shipmentsRepository: Repository<ShipmentEntity>, // Mock en unit tests (simula la Base de datos, evita el PostgreSQL real)
+    private readonly shipmentRulesService: ShipmentRulesService, // Mock en unit tests (simula las reglas de negocio, evita que interfieran en los tests)
   ) {}
 
   findAll(): Promise<ShipmentEntity[]> {

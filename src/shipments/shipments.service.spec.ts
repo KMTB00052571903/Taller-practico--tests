@@ -166,3 +166,13 @@ describe('ShipmentsService', () => {
         expect(result).toEqual(savedShipment);
     });
 });
+
+
+/* Test Suites: 1 passed, 1 total
+Tests:       6 passed, 6 total
+Snapshots:   0 total
+Time:        3.161 s, estimated 4 s
+Ran all test suites matching /shipments.service.spec.ts/i.
+*/
+
+
